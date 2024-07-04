@@ -11,3 +11,104 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* navbar */
+.app nav {
+  /* display: flex; */
+  /* padding: 1.8% 4%; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* background-color: transparent; */
+  border-bottom: 1px solid black;
+}
+
+.app nav img {
+  margin: 10px;
+  padding: 0;
+  width: 50px;
+  cursor: pointer;
+}
+
+.app nav h2 {
+  font-size: 25px;
+  padding-left: 0px;
+  padding-top: 8px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links {
+  /* flex: 1; */
+  /* text-align: right; */
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 22px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links .book a {
+  background-color: rgb(19, 102, 147);
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+@media(max-width: 768px) {
+  .nav-links {
+    text-align: center;
+  }
+
+  .nav-links ul li {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 3.5px;
+    padding: 0px;
+  }
+
+  .nav-links ul li::after {
+    background-color: transparent;
+
+  }
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./components/images/cars.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 95%;
+  position: relative;
+}
+
+.text-box {
+  /* width: 90%; */
+  color: #000000;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-box h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #000000;
+}

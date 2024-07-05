@@ -13,7 +13,7 @@ function CarRentalForm() {
   });
 
   const locations = ['Albion, Brisbane', 'Auburn, Sydney', 'Port Melbourne', 'Hobart, Tasmania'];
-  const driverAges = [, '21', '22', '23', '24', '25+'];
+  const driverAges = ['21', '22', '23', '24', '25+'];
 
   const generateTimeOptions = () => {
     const times = [];

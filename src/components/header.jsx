@@ -15,16 +15,16 @@ function Header() {
                     <div class="nav-links collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="navTxt nav-link" aria-current="page" href="/">HOME</a>
+                                <a class="navTxt nav-link" aria-current="page" href="">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="navTxt nav-link" aria-current="page" href="/Rules">ABOUT</a>
+                                <a class="navTxt nav-link" aria-current="page" href="">ABOUT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="navTxt nav-link" aria-current="page" href="#contact">CONTACT</a>
+                                <a class="navTxt nav-link" aria-current="page" href="">CONTACT</a>
                             </li>
                             <li class="nav-item book">
-                                <a class="navTxt nav-link" aria-current="page" href="/StudentLogin">BOOK NOW</a>
+                                <a class="navTxt nav-link" aria-current="page" href="">BOOK NOW</a>
                             </li>
                         </ul>
                     </div>

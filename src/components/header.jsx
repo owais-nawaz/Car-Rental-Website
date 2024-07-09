@@ -23,6 +23,9 @@ function Header() {
                             <li class="nav-item">
                                 <a class="navTxt nav-link" aria-current="page" href="">CONTACT</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="navTxt nav-link" aria-current="page" href="">PRODUCTS & SERVICES</a>
+                            </li>
                             <li class="nav-item book">
                                 <a class="navTxt nav-link" aria-current="page" href="">BOOK NOW</a>
                             </li>

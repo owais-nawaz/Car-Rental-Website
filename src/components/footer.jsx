@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div>
+    <div className = "footer-background">
       <div className="footer">
         <div className="text-content">
           <h3>Runcorn, Brisbane</h3>
@@ -22,10 +22,11 @@ function Footer() {
         </div>
       </div>
       <div className="terms">
-        <a>Powered by Carbar</a>
         <a>Terms & conditions</a>
         <a >Privacy policy</a>
       </div>
+      <hr/>
+      <p class="copyright">©2024 ALD Car Rental</p>
     </div>
   );
 }

@@ -32,6 +32,7 @@ const CarGallery = () => {
           <li>Free Additional Drivers</li>
           <li>New models with low kms</li>
         </ul>
+        <button class="vehicleButton" aria-current="page ">VIEW VEHICLES</button>
       </div>
       <div className="car-grid">
         {cars.map((car) => (

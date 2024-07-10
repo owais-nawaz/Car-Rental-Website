@@ -28,7 +28,7 @@ function Header({ handleClick }) {
                   className="navTxt nav-link"
                   aria-current="page"
                   href="#"
-                  onClick={() => handleClick('home')}
+                  onClick={() => handleClick("home")}
                 >
                   HOME
                 </a>
@@ -39,7 +39,12 @@ function Header({ handleClick }) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="navTxt nav-link" aria-current="page" href="#">
+                <a
+                  className="navTxt nav-link"
+                  aria-current="page"
+                  href="#"
+                  onClick={() => handleClick("contact")}
+                >
                   CONTACT
                 </a>
               </li>
@@ -48,7 +53,7 @@ function Header({ handleClick }) {
                   className="navTxt nav-link"
                   aria-current="page"
                   href="#"
-                  onClick={() => handleClick('vehicles')}
+                  onClick={() => handleClick("vehicles")}
                 >
                   VEHICLES
                 </a>

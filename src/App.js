@@ -1,44 +1,24 @@
 import React, { useState } from "react";
-import Form from "./components/form";
 import Header from "./components/header";
-import Main from "./components/main";
-import CarGallery from "./components/carGallery";
-import Card from "./components/card";
-import Footer from "./components/footer";
+import Home from "./components/home";
 import Vehicles from "./components/vehicles";
+import Footer from "./components/footer";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("home");
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case "home":
-        return (
-          <>
-            <Main />
-            <Form />
-            <CarGallery />
-            <Card />
-          </>
-        );
-      case "vehicles":
-        return <Vehicles />;
-      default:
-        return (
-          <>
-            <Main />
-            <Form />
-            <CarGallery />
-            <Card />
-          </>
-        );
-    }
+  const initialState = {
+    home: false,
+    vehicles: false
+  };
+  const [isClicked, setIsClicked] = useState({ home: true });
+  const handleClick = (clicked) => {
+    setIsClicked({ ...initialState, [clicked]: true });
   };
 
   return (
     <div className="app">
-      <Header setCurrentPage={setCurrentPage} />
-      {renderPage()}
+      <Header handleClick={handleClick} />
+      {isClicked.home && <Home />}
+      {isClicked.vehicles && <Vehicles />}
       <Footer />
     </div>
   );
